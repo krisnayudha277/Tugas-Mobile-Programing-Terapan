@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <meta http-equiv="refresh" content="1">
+</head>
+<body>
+    
+<center>
+<h1> Pengendalian Lampu Jarak Jauh Menggunakan Internet </h1>
+
+<a href="proses_update.php?status=on"><button type="button">Nyalakan Lampu </button> </a>
+<br> <br><br>
+<a href="proses_update.php?status=off"><button type="button">Matikan Lampu </button> </a>
+
+
+<h1>Status Lampu (Aktual)</h1>
+
+<?php
+
+
+include("config.php");
+
+$sql = "SELECT * FROM lampu WHERE id_lampu='1'";
+$result = array();
+$query = mysqli_query($db, $sql);
+ 
+while($row = mysqli_fetch_array($query)){
+    echo "<h2>".$row['status_aktual']."</h2>";
+}
+
+
+
+?>
+</center>
+
+</body>
+</html>
