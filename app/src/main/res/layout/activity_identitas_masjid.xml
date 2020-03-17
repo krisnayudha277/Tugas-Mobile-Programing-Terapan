@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/bg2"
+        tools:context=".identitas_masjid">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Identitas MasjidMu"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="30dp"/>
+    <GridLayout android:id="@+id/gridsatu"
+    android:columnCount="1"
+    android:rowCount="3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_columnWeight="1"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp">
+        <TextView
+                android:id="@+id/namamasjid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="Masjid"/>
+        <TextView
+                android:id="@+id/alamatmasjid"
+                android:layout_width="match_parent"
+                android:paddingTop="100dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat"/>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Identitas"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="40dp"
+            android:textSize="30dp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama_masjid"
+            android:gravity="center"
+            android:hint="Nama Masjid"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alamat_masjid"
+            android:gravity="center"
+            android:hint="Alamat Masjid"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_marginTop="20dp"
+            android:id="@+id/simpan"
+            android:gravity="center"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/kembali2"/>
+    </LinearLayout>
+</LinearLayout>
