@@ -30,7 +30,7 @@ class Tambah : AppCompatActivity() {
         }
     }
     fun postkeserver(data: String, data2: String, data3: String, data4: String) {
-        AndroidNetworking.post("http://192.168.43.210/cobarepo/proses_mahasiswa.php")
+        AndroidNetworking.post("http://192.168.43.210/cobarepo/proses_penduduk.php")
             .addBodyParameter("nama_penduduk", data)
             .addBodyParameter("nim_penduduk", data2)
             .addBodyParameter("alamat_penduduk", data3)
